@@ -1,5 +1,8 @@
 # Kernelspacelog - prototype of kernelspace keylogger for Linux systems
 
+[![Travis build][travis-badge]][travis-page]
+[![License][license-badge]][license-page]
+
 ## Features:
  - runs as a kernel module
  - writes log to file
