@@ -3,6 +3,9 @@ before_install:
 - sudo apt-get update
 - sudo apt-get -y install linux-headers-generic
 install:
-- ls /lib/modules/
+- uname -r
+- ls /lib/modules
+- KERNELDIR=$(ls /lib/modules | head -1)/build
+- make
 script:
 - echo "No tests yet"
