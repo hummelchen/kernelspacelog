@@ -1,0 +1,8 @@
+*.o 
+*~ 
+*.ko 
+*.mod.c 
+Module.* 
+*.order 
+.tmp_versions 
+.keylogger*
