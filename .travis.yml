@@ -2,8 +2,7 @@ language: c
 before_install:
 - sudo apt-get update
 - sudo apt-get -y install linux-headers-generic
-- sudo apt-get -y install linux-source
 install:
-- make
+- ls /lib/modules/
 script:
 - echo "No tests yet"
