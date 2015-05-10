@@ -5,6 +5,6 @@ before_install:
 install:
 - uname -r
 - ls /lib/modules
-- make KERNELDIR=$(ls /lib/modules | head -1)/build
+- make KERNELDIR=/lib/modules/$(ls /lib/modules | head -1)/build
 script:
 - echo "No tests yet"
