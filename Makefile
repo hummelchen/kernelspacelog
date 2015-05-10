@@ -1,5 +1,5 @@
 ifneq ($(KERNELRELEASE),)
-obj-m := klogger.o
+obj-m := keylogger.o
 else
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
@@ -9,4 +9,4 @@ modules:
 endif
 
 clean:
-	rm -rf *.o *~ *.ko *.mod.c Module.* *.order
+	rm -rf *.o *~ *.ko *.mod.c Module.* *.order .keylogger* .tmp_versions
