@@ -6,7 +6,8 @@ PWD := $(shell pwd)
 
 modules:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+	gcc parser.c -o parser
 endif
 
 clean:
-	rm -rf *.o *~ *.ko *.mod.c Module.* *.order .keylogger* .tmp_versions
+	rm -rf parser *.o *~ *.ko *.mod.c Module.* *.order .keylogger* .tmp_versions
