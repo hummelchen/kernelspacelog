@@ -26,6 +26,7 @@ void keylogger_exit(void) {
     memset(buffer, 0, buf_length);
     kfree(buffer);
     bptr = buffer;
+    flag = 0;
 }
 
 int save_buffer()
